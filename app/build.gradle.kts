@@ -3,14 +3,14 @@ plugins {
 }
 
 android {
-    namespace = "com.example.gps_android"
+    namespace = "com.example.gpsandroid"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.example.gps_android"
-        minSdk = 28
+        applicationId = "com.example.gpsandroid"
+        minSdk = 24
         targetSdk = 37
         versionCode = 1
         versionName = "1.0"
@@ -37,6 +37,7 @@ dependencies {
     implementation(libs.appcompat)
     implementation(libs.constraintlayout)
     implementation(libs.material)
+    implementation("org.osmdroid:osmdroid-android:6.1.18")
     testImplementation(libs.junit)
     androidTestImplementation(libs.espresso.core)
     androidTestImplementation(libs.ext.junit)
